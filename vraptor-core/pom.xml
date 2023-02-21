@@ -84,7 +84,7 @@
 		<dependency>
 			<groupId>commons-fileupload</groupId>
 			<artifactId>commons-fileupload</artifactId>
-			<version>1.3.3</version>
+			<version>1.5</version>
 			<optional>true</optional>
 		</dependency>
 		
@@ -299,7 +299,7 @@
 						<phase>process-sources</phase>
 						<configuration>
 							<target>
-								<replaceregexp file="src/main/java/br/com/caelum/vraptor/VRaptor.java" match="VERSION = &quot;(.*)&quot;;" replace="VERSION = &quot;${project.version}&quot;;" />
+								<replaceregexp file="src/main/java/br/com/caelum/vraptor/VRaptor.java" match="VERSION = &quot;(.*)&quot;;" replace="VERSION = &quot;${project.version}&quot;;"/>
 							</target>
 						</configuration>
 						<goals>
