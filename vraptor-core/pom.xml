@@ -19,7 +19,7 @@
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
-			<version>20.0</version>
+			<version>32.0.0-android</version>
 		</dependency>
 		
 		<dependency>
@@ -299,7 +299,7 @@
 						<phase>process-sources</phase>
 						<configuration>
 							<target>
-								<replaceregexp file="src/main/java/br/com/caelum/vraptor/VRaptor.java" match="VERSION = &quot;(.*)&quot;;" replace="VERSION = &quot;${project.version}&quot;;" />
+								<replaceregexp file="src/main/java/br/com/caelum/vraptor/VRaptor.java" match="VERSION = &quot;(.*)&quot;;" replace="VERSION = &quot;${project.version}&quot;;"/>
 							</target>
 						</configuration>
 						<goals>
